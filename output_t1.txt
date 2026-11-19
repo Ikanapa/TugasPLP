@@ -1,0 +1,39 @@
+=== fungsi ===
+(module (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (identifier)))))
+
+=== if_else ===
+(module (if_statement condition: (comparison_operator (identifier) (integer)) consequence: (block (expression_statement (call function: (identifier) arguments: (argument_list (string (string_start) (string_content) (string_end)))))) alternative: (else_clause body: (block (expression_statement (call function: (identifier) arguments: (argument_list (string (string_start) (string_content) (string_end)))))))))
+
+=== kelas ===
+(module (class_definition name: (identifier) body: (block (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (string (string_start) (string_content) (string_end))))))))
+
+=== rusak ===
+(module (ERROR (identifier) (parameters (identifier)) (identifier)))
+
+=== rusak2 ===
+(module (ERROR (string (string_start) (string_content) (string_end))))
+
+=== anak function_definition ===
+def anonim
+identifier bernama
+parameters bernama
+: anonim
+block bernama
+
+=== anak parameters ===
+( anonim
+identifier bernama
+) anonim
+
+=== anak return_statement ===
+return anonim
+identifier bernama
+
+=== anak comparison_operator (dari if_else) ===
+identifier bernama
+>= anonim
+integer bernama
+
+=== children vs named_children (function_definition) ===
+children      : ['def', 'identifier', 'parameters', ':', 'block']
+named_children: ['identifier', 'parameters', 'block']
