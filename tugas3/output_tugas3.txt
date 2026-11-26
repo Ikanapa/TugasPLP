@@ -1,0 +1,15 @@
+tambah 2
+sapa 0
+kali 5
+m 2
+@fn  baris 8: print
+@fn  baris 19: print
+@fn  baris 12: print
+@args  baris 8: ("jumlah", a + b)
+@args  baris 12: ("halo")
+@args  baris 19: (n)
+@modul  baris 1: os
+@modul  baris 2: sys
+@modul  baris 5: .util
+@modul  baris 4: .
+@modul  baris 3: pathlib
